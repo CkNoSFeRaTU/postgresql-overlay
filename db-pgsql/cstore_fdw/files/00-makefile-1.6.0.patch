@@ -1,0 +1,13 @@
+diff --git a/Makefile.old b/Makefile
+index e6cc91d..c616ecc 100644
+--- a/Makefile.old
++++ b/Makefile
+@@ -33,7 +33,7 @@ endif
+ # example: /usr/local/pgsql/bin/pg_config or /usr/lib/postgresql/9.3/bin/pg_config
+ #
+ 
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
+ 

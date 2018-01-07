@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>loki@lokis-chaos.de</email>
+</maintainer>
+<longdescription lang="en">
+cstore_fdw is column-oriented store available for PostgreSQL. Using it will
+let you:
+    Leverage typical analytics benefits of columnar stores
+	Deploy on stock PostgreSQL or scale-out PostgreSQL (CitusDB)
+</longdescription>
+</pkgmetadata>
