@@ -1,0 +1,18 @@
+--- setup.py.orig       2018-01-07 21:56:57.398192778 +0100
++++ setup.py    2018-01-07 22:15:23.419485715 +0100
+@@ -1,5 +1,6 @@
+ import subprocess
+ import sys
++import os
+ from setuptools import setup, find_packages, Extension
+ 
+ # hum... borrowed from psycopg2
+@@ -11,7 +12,7 @@
+         raise Warning(p[2].readline())
+     return r
+ 
+-include_dirs = [get_pg_config(d) for d in ("includedir", "pkgincludedir", "includedir-server")]
++include_dirs = [get_pg_config(d,os.environ['PG_CONFIG']) for d in ("includedir", "pkgincludedir", "includedir-server")]
+ 
+ multicorn_utils_module = Extension('multicorn._utils',
+         include_dirs=include_dirs,
