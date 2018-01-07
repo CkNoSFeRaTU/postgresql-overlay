@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>loki@lokis-chaos.de</email>
+</maintainer>
+<longdescription lang="en">
+E-Maj is a set of PL/pgSQL functions allowing PostgreSQL Database
+Administrators to record updates applied on a set of tables, with
+the capability to "rollback" these updates to a predefined point
+in time.
+</longdescription>
+</pkgmetadata>

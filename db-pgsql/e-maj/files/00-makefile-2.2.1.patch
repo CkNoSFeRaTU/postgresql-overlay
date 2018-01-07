@@ -1,0 +1,13 @@
+--- Makefile.old	2017-12-26 15:08:30.000000000 +0100
++++ Makefile	2018-01-07 17:27:09.829270301 +0100
+@@ -1,8 +1,7 @@
+ EXTENSION = emaj
+ EXTVERSION = $(shell grep default_version $(EXTENSION).control | \
+                sed -e "s/default_version[[:space:]]*=[[:space:]]*'\([^']*\)'/\1/")
+-DOCS = README.md
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ 
+ all: sql/$(EXTENSION)--$(EXTVERSION).sql
+ 
+/home/tbe/repos/postgresql-overlay/db-pgsql/e-maj
