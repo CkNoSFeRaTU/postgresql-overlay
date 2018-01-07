@@ -10,4 +10,3 @@
  
  all: sql/$(EXTENSION)--$(EXTVERSION).sql
  
-/home/tbe/repos/postgresql-overlay/db-pgsql/e-maj

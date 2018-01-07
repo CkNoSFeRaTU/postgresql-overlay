@@ -1,23 +1,23 @@
---- Makefile.old	2018-01-07 17:15:19.400024239 +0100
-+++ Makefile	2018-01-07 17:16:18.754716084 +0100
-@@ -2,10 +2,7 @@
+--- Makefile.old	2016-03-08 23:30:30.000000000 +0100
++++ Makefile	2018-01-07 20:54:53.164115807 +0100
+@@ -2,10 +2,8 @@
  EXTVERSION   = $(shell grep default_version $(EXTENSION).control | \
                 sed -e "s/default_version[[:space:]]*=[[:space:]]*'\\([^']*\\)'/\\1/")
  
 -DOCS         = $(wildcard doc/*.md)
 -SCRIPTS      = $(wildcard tools/*.p[lm]) $(wildcard tools/*.sh)
--
+ 
 -PG_CONFIG    = pg_config
-+PG_CONFIG    ?= pg_config
++PG_CONFIG ?= pg_config
  DATA         = $(wildcard sql/$(EXTENSION)--*--*.sql) sql/$(EXTENSION)--$(EXTVERSION).sql
  
  PGXS := $(shell $(PG_CONFIG) --pgxs)
-@@ -30,7 +27,7 @@
+@@ -30,7 +28,7 @@
  #############################
  ### Packaging for release ###
  #############################
 -PKGFILES     = cyanaudit.control LICENSE README.md Makefile META.json $(DATA) $(DOCS) $(SCRIPTS)
-+PKGFILES     = cyanaudit.control LICENSE README.md Makefile META.json $(DATA)
++PKGFILES     = cyanaudit.control LICENSE README.md Makefile META.json $(DATA)  
  
  PKGNAME      = $(EXTENSION)-$(EXTVERSION)
  PKG_TGZ      = dist/$(PKGNAME).tar.gz
