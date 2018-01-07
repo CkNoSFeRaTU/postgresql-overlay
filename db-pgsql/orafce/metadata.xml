@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+The goal of this project is implementation some functions from Oracle database.
+Some date functions (next_day, last_day, trunc, round, ...) are implemented
+now. Functionality was verified on Oracle 10g and module is useful
+for production work.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Pavel Stehule</name>
+    </maintainer>
+    <changelog>https://github.com/orafce/orafce/releases</changelog>
+    <doc>https://github.com/orafce/orafce/tree/master/doc</doc>
+    <bugs-to>https://github.com/orafce/orafce/issues</bugs-to>
+    <remote-id type='github'>orafce/orafce</remote-id>
+  </upstream>
+</pkgmetadata>
