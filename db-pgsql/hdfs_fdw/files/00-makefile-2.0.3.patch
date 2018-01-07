@@ -1,0 +1,12 @@
+--- Makefile.old	2018-01-07 18:11:04.412832106 +0100
++++ Makefile	2018-01-07 18:11:04.414832095 +0100
+@@ -19,7 +19,7 @@
+ EXTENSION = hdfs_fdw
+ DATA = hdfs_fdw--2.0.2.sql hdfs_fdw--2.0.3.sql hdfs_fdw--2.0.1--2.0.2.sql hdfs_fdw--2.0.2--2.0.3.sql hdfs_fdw--2.0.1.sql hdfs_fdw--2.0--2.0.1.sql hdfs_fdw--1.0--2.0.sql hdfs_fdw--1.0.sql
+ 
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
+ 
+/home/tbe/repos/postgresql-overlay

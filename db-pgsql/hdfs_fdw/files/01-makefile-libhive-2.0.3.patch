@@ -1,0 +1,11 @@
+--- libhive/Makefile.old	2018-01-07 18:16:37.779111937 +0100
++++ libhive/Makefile	2018-01-07 18:17:26.381861148 +0100
+@@ -1,6 +1,7 @@
+ .PHONY : clean
+ 
+-PG_INC_PATH=$(shell pg_config --includedir-server)
++PG_CONFIG ?= pg_config
++PG_INC_PATH=$(shell $(PG_CONFIG) --includedir-server)
+ CPPFLAGS= -Wno-unused-variable -fPIC -Wall -g -I$(PG_INC_PATH) -I$(JDK_INCLUDE) -I$(JDK_INCLUDE)/linux/ -Ijdbc
+ LDFLAGS:= $(LDFLAGS) -shared
+ 

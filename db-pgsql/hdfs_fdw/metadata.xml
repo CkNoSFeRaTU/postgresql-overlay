@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+This PostgreSQL extension implements a Foreign Data Wrapper (FDW) for
+the hdfs.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>EnterpriseDB</name>
+    </maintainer>
+    <changelog>https://github.com/EnterpriseDB/hdfs_fdw/releases</changelog>
+    <doc>https://github.com/EnterpriseDB/hdfs_fdw/blob/master/README.md</doc>
+    <bugs-to>https://github.com/EnterpriseDB/hdfs_fdw/issues</bugs-to>
+    <remote-id type='github'>EnterpriseDB/hdfs_fdw</remote-id>
+  </upstream>
+</pkgmetadata>
