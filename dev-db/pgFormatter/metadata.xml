@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+A PostgreSQL SQL syntax beautifier that can work as a console program
+or as a CGI. Download from https://sourceforge.net/p/pgformatter/ and
+demo site at http://sqlformat.darold.net/
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Gilles Darold</name>
+    </maintainer>
+    <changelog>https://github.com/darold/pgFormatter/blob/master/ChangeLog</changelog>
+    <doc>https://github.com/darold/pgFormatter/blob/master/README</doc>
+    <bugs-to>https://github.com/darold/pgFormatter/issues</bugs-to>
+    <remote-id type='github'>darold/pgFormatter</remote-id>
+  </upstream>
+</pkgmetadata>
