@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>loki@lokis-chaos.de</email>
+</maintainer>
+<longdescription lang="en">
+Cyan Audit provides in-database logging of all DML activity on a
+column-by-column basis.
+</longdescription>
+</pkgmetadata>
