@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-<maintainer type="person">
-<email>loki@lokis-chaos.de</email>
-</maintainer>
-<longdescription lang="en">
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
 E-Maj is a set of PL/pgSQL functions allowing PostgreSQL Database
 Administrators to record updates applied on a set of tables, with
 the capability to "rollback" these updates to a predefined point
 in time.
-</longdescription>
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Philippe Beaudoin</name>
+    </maintainer>
+    <changelog>https://github.com/beaud76/emaj/blob/master/CHANGES.md</changelog>
+    <doc>https://emaj.readthedocs.io/en/latest/</doc>
+    <bugs-to>https://github.com/beaud76/emaj/issues</bugs-to>
+    <remote-id type='github'>beaud76/emaj</remote-id>
+  </upstream>
 </pkgmetadata>

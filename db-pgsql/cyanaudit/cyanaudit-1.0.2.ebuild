@@ -18,7 +18,6 @@ IUSE="+tools"
 
 DEPEND="
 	${POSTGRES_DEP}
-	dev-libs/protobuf-c
 "
 RDEPEND="
 	${DEPEND}
