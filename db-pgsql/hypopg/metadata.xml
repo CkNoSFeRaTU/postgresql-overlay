@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+HypoPG is a PostgreSQL extension adding support for hypothetical indexes.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>DALIBO</name>
+    </maintainer>
+    <changelog>https://github.com/dalibo/hypopg/blob/master/CHANGELOG.md</changelog>
+    <doc>https://github.com/dalibo/hypopg/blob/master/README.md</doc>
+    <bugs-to>https://github.com/dalibo/hypopg/issues</bugs-to>
+    <remote-id type='github'>dalibo/hypopg</remote-id>
+  </upstream>
+</pkgmetadata>
