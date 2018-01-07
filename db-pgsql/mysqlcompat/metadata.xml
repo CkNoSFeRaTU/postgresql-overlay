@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+This project is a collection of functions, aggregates, operators and
+casts that make PostgreSQL mimic MySQL as closely as possible.
+
+To use the project, you can either find and install the few functions
+that you need, or run all the .sql files to install the complete
+compatibility environment.
+
+This can be an immense time-saver when porting large applications that
+rely heavily on certain MySQL functions.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>2ndQuadrant</name>
+    </maintainer>
+    <changelog>https://github.com/2ndQuadrant/mysqlcompat/commits/master</changelog>
+    <doc>https://github.com/2ndQuadrant/mysqlcompat/blob/master/README.md</doc>
+    <bugs-to>https://github.com/2ndQuadrant/mysqlcompat/issues</bugs-to>
+    <remote-id type='github'>2ndQuadrant/mysqlcompat</remote-id>
+  </upstream>
+</pkgmetadata>
