@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+Script to provide a bloat report for PostgreSQL tables and/or indexes.
+Requires at least Python 2.6 and the pgstattuple contrib module.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Keith Fiske</name>
+    </maintainer>
+    <changelog>https://github.com/keithf4/pg_bloat_check/blob/master/CHANGELOG</changelog>
+    <doc>https://github.com/keithf4/pg_bloat_check/blob/master/README.md</doc>
+    <bugs-to>https://github.com/keithf4/pg_bloat_check/issues</bugs-to>
+    <remote-id type='github'>keithf4/pg_bloat_check</remote-id>
+  </upstream>
+</pkgmetadata>
