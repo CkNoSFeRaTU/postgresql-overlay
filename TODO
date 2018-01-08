@@ -1,0 +1,23 @@
+The following projects are missing right now:
+
+- gdal
+    - ogr_fdw
+
+- mysqlmigrator
+
+- ora2pg
+    -> needs DBD::Oracle and instant client
+- oracle_fdw
+    -> needs instant client
+
+- pagila
+    -> should we make an ebuild for this? it is just a SQL file ...
+
+- pgMail
+    -> should we make an ebuild for this? it is just a SQL file ...
+    -> only reason i can think of would be the tcl dependency for postgresql use flags
+
+- pg_bulkload
+    -> https://bugs.gentoo.org/571046
+
+PostgreSQL 11 support should be prepared
