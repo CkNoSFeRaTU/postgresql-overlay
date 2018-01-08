@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_fkpart is a PostgreSQL extension to partition tables following a foreign key
+of a table.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Lemoine Automation Technologies</name>
+    </maintainer>
+    <changelog>https://github.com/lemoineat/pg_fkpart/releases</changelog>
+    <doc>https://github.com/lemoineat/pg_fkpart/blob/master/README.md</doc>
+    <bugs-to>https://github.com/lemoineat/pg_fkpart/issues</bugs-to>
+    <remote-id type='github'>lemoineat/pg_fkpart</remote-id>
+  </upstream>
+</pkgmetadata>

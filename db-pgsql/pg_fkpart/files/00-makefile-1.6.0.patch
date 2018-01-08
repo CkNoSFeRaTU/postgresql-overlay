@@ -1,0 +1,10 @@
+--- Makefile.old	2018-01-08 21:52:17.633296812 +0100
++++ Makefile	2018-01-08 21:52:17.634297306 +0100
+@@ -3,6 +3,6 @@
+ EXTENSION = pg_fkpart
+ DATA = pg_fkpart--1.6.sql pg_fkpart--unpackaged--1.1.sql pg_fkpart--1.0--1.1.sql pg_fkpart--1.1--1.2.sql pg_fkpart--1.2--1.3.sql pg_fkpart--1.3--1.4.sql pg_fkpart--1.4--1.5.sql pg_fkpart--1.5--1.6.sql
+ 
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
