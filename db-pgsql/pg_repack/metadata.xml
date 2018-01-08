@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_repack can re-organize tables on a postgres database without any locks so that
+you can retrieve or update rows in tables being reorganized.
+The module is developed to be a better alternative of CLUSTER and VACUUM FULL.
+  </longdescription>
+  <upstream>
+    <changelog>https://github.com/reorg/pg_repack/releases</changelog>
+    <doc>https://github.com/reorg/pg_repack/blob/master/doc/pg_repack.rst</doc>
+    <bugs-to>https://github.com/reorg/pg_repack/issues</bugs-to>
+    <remote-id type='github'>reorg/pg_repack</remote-id>
+  </upstream>
+</pkgmetadata>
