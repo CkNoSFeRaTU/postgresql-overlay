@@ -16,7 +16,7 @@ KEYWORDS="amd64 x86 ppc64 ~arm ~arm64"
 IUSE=""
 
 DEPEND="
-    ${POSTGRES_DEP}
+	${POSTGRES_DEP}
 "
 RDEPEND="${DEPEND}"
 

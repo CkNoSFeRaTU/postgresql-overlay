@@ -16,24 +16,23 @@ KEYWORDS="amd64 x86 ppc64 ~arm ~arm64"
 IUSE=""
 
 DEPEND="
-    ${POSTGRES_DEP}
+	${POSTGRES_DEP}
 	dev-libs/protobuf-c
 "
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-  epatch "${FILESDIR}/00-makefile-1.6.0.patch"
+	epatch "${FILESDIR}/00-makefile-1.6.0.patch"
 
-  postgres-multi_src_prepare
+	postgres-multi_src_prepare
 }
 
 src_compile() {
-  postgres-multi_foreach emake
+	postgres-multi_foreach emake
 }
 
 src_install() {
-  postgres-multi_foreach emake DESTDIR="${D}" install
-  
+	postgres-multi_foreach emake DESTDIR="${D}" install
 
-  dodoc README.md LICENSE
+	dodoc README.md LICENSE
 }

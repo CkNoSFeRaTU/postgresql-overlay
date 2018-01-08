@@ -17,12 +17,12 @@ KEYWORDS="amd64 x86 ppc64 ~arm ~arm64"
 IUSE=""
 
 RDEPEND="
-    ${POSTGRES_DEP}
-    dev-libs/openssl
-    sys-libs/readline
+	${POSTGRES_DEP}
+	dev-libs/openssl
+	sys-libs/readline
 "
 DEPEND="
-    ${DEPEND}
+	${DEPEND}
 "
 S="${WORKDIR}/${PN}-VERSION${PV//./_}"
 src_prepare() {
@@ -32,7 +32,7 @@ src_prepare() {
 }
 
 src_compile() {
-    postgres-multi_foreach emake USE_PGXS=1
+	postgres-multi_foreach emake USE_PGXS=1
 }
 
 src_install() {

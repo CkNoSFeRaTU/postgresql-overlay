@@ -21,9 +21,9 @@ KEYWORDS="amd64 x86 ppc64 ~arm ~arm64"
 IUSE=""
 
 DEPEND="
-    ${POSTGRES_DEP}
-    ${PYTHON_DEPS}
-    dev-python/setuptools[${PYTHON_USEDEP}]
+	${POSTGRES_DEP}
+	${PYTHON_DEPS}
+	dev-python/setuptools[${PYTHON_USEDEP}]
 "
 
 RDEPEND="${DEPEND}"
@@ -31,22 +31,22 @@ RDEPEND="${DEPEND}"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 src_prepare() {
-    epatch "${FILESDIR}/00-makefile-1.3.4.patch"
-    epatch "${FILESDIR}/01-setuptools-pgxs-1.3.4.patch"
+	epatch "${FILESDIR}/00-makefile-1.3.4.patch"
+	epatch "${FILESDIR}/01-setuptools-pgxs-1.3.4.patch"
 
-    postgres-multi_src_prepare
+	postgres-multi_src_prepare
 }
 
 src_compile() {
-    postgres-multi_src_compile
+	postgres-multi_src_compile
 }
 
 src_install() {
-    postgres-multi_src_install
+	postgres-multi_src_install
 
-    python_setup
-    postgres-multi_forbest distutils-r1_python_install
-    
-    dodoc README.md
-    dodoc -r doc/*
+	python_setup
+	postgres-multi_forbest distutils-r1_python_install
+
+	dodoc README.md
+	dodoc -r doc/*
 }

@@ -31,15 +31,15 @@ src_prepare() {
 }
 
 src_install() {
-    postgres-multi_foreach emake DESTDIR="${D}" install
+	postgres-multi_foreach emake DESTDIR="${D}" install
 
-    if use tools ; then
-        perl_domodule tools/Cyanaudit.pm
-        dobin tools/${PN}_dump.pl
-        dobin tools/${PN}_log_rotate.pl
-        dobin tools/${PN}_restore.pl
-        dobin tools/${PN}_tablespace_fix.sh
-    fi
+	if use tools ; then
+		perl_domodule tools/Cyanaudit.pm
+		dobin tools/${PN}_dump.pl
+		dobin tools/${PN}_log_rotate.pl
+		dobin tools/${PN}_restore.pl
+		dobin tools/${PN}_tablespace_fix.sh
+	fi
 
-    dodoc README.md LICENSE doc/cyanaudit{,_changelog,_upgrade_howto}.md
+	dodoc README.md LICENSE doc/cyanaudit{,_changelog,_upgrade_howto}.md
 }

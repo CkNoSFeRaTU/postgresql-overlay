@@ -16,14 +16,14 @@ KEYWORDS="amd64 x86 ppc64 ~arm ~arm64"
 IUSE=""
 
 RDEPEND="
-    ${POSTGRES_DEP}
-    dev-libs/openssl
-    virtual/krb5
+	${POSTGRES_DEP}
+	dev-libs/openssl
+	virtual/krb5
 "
 DEPEND="
-    ${DEPEND}
-    sys-devel/bison
-    sys-devel/flex
+	${DEPEND}
+	sys-devel/bison
+	sys-devel/flex
 "
 S="${WORKDIR}/${PN}-VERSION_${PV//./_}"
 src_prepare() {
