@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_sample is a utility for exporting a small, sample dataset from a
+larger PostgreSQL database. The output and command-line options closely
+resemble the pg_dump backup utility (although only the plain-text format
+is supported).
+
+The sample database produced includes all tables from the original,
+maintains referential integrity, and supports circular dependencies.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Maurice Aubrey</name>
+    </maintainer>
+    <changelog>https://github.com/mla/pg_sample/blob/master/Changes</changelog>
+    <doc>https://github.com/mla/pg_sample/blob/master/README.md</doc>
+    <bugs-to>https://github.com/mla/pg_sample/issues</bugs-to>
+    <remote-id type='github'>mla/pg_sample</remote-id>
+  </upstream>
+</pkgmetadata>
