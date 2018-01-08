@@ -20,4 +20,9 @@ The following projects are missing right now:
 - pg_bulkload
     -> https://bugs.gentoo.org/571046
 
+- pg_filedump
+    -> does not compile with current postgresql releases
+    -> may need some heavy patching
+    -> ignore it for now ( its a stale project anyway )
+
 PostgreSQL 11 support should be prepared
