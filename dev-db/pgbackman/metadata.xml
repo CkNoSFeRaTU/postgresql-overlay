@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+PgBackMan is a tool for managing PostgreSQL logical backups created
+with pg_dump and pg_dumpall.
+
+It is designed to manage backups from thousands of databases running
+in multiple PostgreSQL nodes, and it supports a multiple backup
+servers topology.
+
+It also manages role and database configuration information when
+creating a backup of a database. This information is necessary to
+ensure a 100% restore of a logical backup of a database and the
+elements associated to it.
+  </longdescription>
+  <use lang="en">
+    <flag name="zabbix">add <pkg>net-analyzer/zabbix</pkg> support</flag>
+	<flag name="logrotate">Use <pkg>app-admin/logrotate</pkg> for rotating logfiles</flag>
+  </use>
+  <upstream>
+    <maintainer>
+      <name>Rafael Martinez Guerrero</name>
+    </maintainer>
+    <changelog>https://github.com/rafaelma/pgbackman/releases</changelog>
+    <doc>https://einstein.e-mc2.net/pgbackman/1.2.0/docs/pgbackman-manual-1.2.0.html</doc>
+    <bugs-to>https://github.com/rafaelma/pgbackman/issues</bugs-to>
+    <remote-id type='github'>rafaelma/pgbackman</remote-id>
+  </upstream>
+</pkgmetadata>

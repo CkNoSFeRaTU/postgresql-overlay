@@ -1,0 +1,42 @@
+#!/sbin/openrc-run
+# Copyright 1999-2018 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+DAEMON_CONTROL=/usr/bin/pgbackman_control
+DAEMON_MAINTENANCE=/usr/bin/pgbackman_maintenance
+DAEMON_ALERTS=/usr/bin/pgbackman_alerts
+PIDFILE_CONTROL=/var/run/pgbackman_control.pid
+PIDFILE_MAINTENANCE=/var/run/pgbackman_maintenance.pid
+PIDFILE_ALERTS=/var/run/pgbackman_alerts.pid
+
+depend() {
+    use postgresql
+}
+
+start() {
+    ebegin "Starting pgbackman_control service"
+    start-stop-daemon --start --quiet --background --make-pidfile --pidfile $PIDFILE_CONTROL --startas $DAEMON_CONTROL
+    eend $? || return $?
+
+    ebegin "Starting pgbackman_maintenance service"
+    start-stop-daemon --start --quiet --background --make-pidfile --pidfile $PIDFILE_MAINTENANCE --startas $DAEMON_MAINTENANCE
+    eend $? || return $?
+
+    ebegin "Starting pgbackman_alerts service"
+    start-stop-daemon --start --quiet --background --make-pidfile --pidfile $PIDFILE_ALERTS --startas $DAEMON_ALERTS
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping pgbackman_control service"
+    start-stop-daemon --stop --quiet --retry=10 --pidfile $PIDFILE_CONTROL
+    eend $? || return $?
+
+    ebegin "Stopping pgbackman_maintenance service"
+    start-stop-daemon --stop --quiet --retry=10 --pidfile $PIDFILE_MAINTENANCE
+    eend $? || return $?
+
+    ebegin "Stopping pgbackman_alerts service"
+    start-stop-daemon --stop --quiet --retry=10 --pidfile $PIDFILE_ALERTS
+    eend $?
+}
