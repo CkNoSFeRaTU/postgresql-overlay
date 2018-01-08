@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_comparator is a tool to compare possibly very big tables in
+different locations and report differences, with a network and
+time-efficient approach.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Koordinates</name>
+    </maintainer>
+    <bugs-to>http://pgfoundry.org/tracker/?atid=230&group_id=1000037&func=browse</bugs-to>
+  </upstream>
+</pkgmetadata>
