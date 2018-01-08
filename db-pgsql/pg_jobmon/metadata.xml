@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_jobmon is a job logging and monitoring extension for PostgreSQL.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>OmniTI Labs</name>
+    </maintainer>
+    <changelog>https://github.com/omniti-labs/pg_jobmon/blob/master/CHANGELOG</changelog>
+    <doc>https://github.com/omniti-labs/pg_jobmon/blob/master/doc/pg_jobmon.md</doc>
+    <bugs-to>https://github.com/omniti-labs/pg_jobmon/issues</bugs-to>
+    <remote-id type='github'>omniti-labs/pg_jobmon</remote-id>
+  </upstream>
+</pkgmetadata>
