@@ -1,0 +1,48 @@
+diff -uarb pg_bulkload-VERSION3_1_14.orig/bin/Makefile pg_bulkload-VERSION3_1_14/bin/Makefile
+--- pg_bulkload-VERSION3_1_14.orig/bin/Makefile	2018-01-08 01:17:19.760565957 +0100
++++ pg_bulkload-VERSION3_1_14/bin/Makefile	2018-01-08 01:19:11.553989103 +0100
+@@ -21,7 +21,7 @@
+ endif
+ 
+ ifdef USE_PGXS
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
+ else
+diff -uarb pg_bulkload-VERSION3_1_14.orig/lib/Makefile pg_bulkload-VERSION3_1_14/lib/Makefile
+--- pg_bulkload-VERSION3_1_14.orig/lib/Makefile	2018-01-08 01:17:19.758565967 +0100
++++ pg_bulkload-VERSION3_1_14/lib/Makefile	2018-01-08 01:19:30.984888840 +0100
+@@ -51,7 +51,7 @@
+ endif
+ 
+ ifdef USE_PGXS
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
+ else
+diff -uarb pg_bulkload-VERSION3_1_14.orig/Makefile pg_bulkload-VERSION3_1_14/Makefile
+--- pg_bulkload-VERSION3_1_14.orig/Makefile	2018-01-08 01:17:19.760565957 +0100
++++ pg_bulkload-VERSION3_1_14/Makefile	2018-01-08 01:17:31.482505471 +0100
+@@ -12,7 +12,7 @@
+ endif
+ 
+ ifdef USE_PGXS
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
+ else
+diff -uarb pg_bulkload-VERSION3_1_14.orig/util/Makefile pg_bulkload-VERSION3_1_14/util/Makefile
+--- pg_bulkload-VERSION3_1_14.orig/util/Makefile	2018-01-08 01:17:19.759565962 +0100
++++ pg_bulkload-VERSION3_1_14/util/Makefile	2018-01-08 01:19:42.621828793 +0100
+@@ -20,7 +20,7 @@
+ endif
+ 
+ ifdef USE_PGXS
+-PG_CONFIG = pg_config
++PG_CONFIG ?= pg_config
+ PGXS := $(shell $(PG_CONFIG) --pgxs)
+ include $(PGXS)
+ else

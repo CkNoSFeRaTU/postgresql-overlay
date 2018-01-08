@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_bulkload provides high-speed data loading capability to PostgreSQL users.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>NTT OSS Center</name>
+    </maintainer>
+    <changelog>https://github.com/ossc-db/pg_bulkload/releases</changelog>
+    <doc>https://ossc-db.github.io/pg_bulkload/pg_bulkload.html/</doc>
+    <bugs-to>https://github.com/ossc-db/pg_bulkload/issues</bugs-to>
+    <remote-id type='github'>ossc-db/pg_bulkload</remote-id>
+  </upstream>
+</pkgmetadata>
