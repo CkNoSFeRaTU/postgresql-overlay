@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pg_catcheck is a simple tool for diagnosing system catalog corruption.
+If you suspect that your system catalogs are corrupted, this tool may
+help you figure out exactly what problems you have and how serious they
+are. If you are paranoid, you can run it routinely to search for system
+catalog corruption that might otherwise go undetected. However, pg_catcheck
+is not a general corruption detector. For that, you should use PostgreSQL's
+checksum feature (`initdb -k`).
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>EnterpriseDB</name>
+    </maintainer>
+    <changelog>https://github.com/EnterpriseDB/pg_catcheck/releases</changelog>
+    <doc>https://github.com/EnterpriseDB/pg_catcheck/blob/master/README.md</doc>
+    <bugs-to>https://groups.google.com/a/enterprisedb.com/forum/#!forum/pg-catcheck</bugs-to>
+    <remote-id type='github'>EnterpriseDB/pg_catcheck</remote-id>
+  </upstream>
+</pkgmetadata>
