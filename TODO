@@ -25,4 +25,12 @@ The following projects are missing right now:
     -> may need some heavy patching
     -> ignore it for now ( its a stale project anyway )
 
+- pg_shard
+    -> is deprecated and replaced by citus
+    -> is it worth packaging?
+
+
+`eselect postgresql update` should be called by all packages,
+that install binaries
+
 PostgreSQL 11 support should be prepared
