@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>loki@lokis-chaos.de</email>
+  </maintainer>
+  <longdescription lang="en">
+pgbConsole is the top-like console for Pgbouncer - PostgreSQL connection
+pooler. Features:
+
+ * top-like interface
+ * show information about client/servers connections, pools/databases
+   info and statistics.
+ * ability to perform admin commands, such as pause, resume, reload and
+   others.
+ * ability to show log files or edit configuration in local pgbouncers.
+  </longdescription>
+  <upstream>
+    <maintainer>
+      <name>Lesovsky Alexey</name>
+    </maintainer>
+    <changelog>https://github.com/lesovsky/pgbconsole/tree/master/doc/Changelog</changelog>
+    <doc>https://github.com/lesovsky/pgbconsole/blob/master/README.md</doc>
+    <bugs-to>https://github.com/lesovsky/pgbconsole/issues</bugs-to>
+    <remote-id type='github'>lesovsky/pgbconsole</remote-id>
+  </upstream>
+</pkgmetadata>

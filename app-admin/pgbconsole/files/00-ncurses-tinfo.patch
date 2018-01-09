@@ -1,0 +1,11 @@
+--- Makefile.orig	2018-01-09 01:00:57.509315299 +0100
++++ Makefile	2018-01-09 01:01:56.039658718 +0100
+@@ -6,7 +6,7 @@
+ PGCONFIG ?= pg_config
+ PGLIBDIR = $(shell $(PGCONFIG) --libdir)
+ PGINCLUDEDIR = $(shell $(PGCONFIG) --includedir)
+-LIBS = -lncurses -lpq
++LIBS = -lncurses -ltinfo -lpq
+ DESTDIR ?=
+ 
+ .PHONY: all clean install
